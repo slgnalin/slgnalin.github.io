@@ -2,8 +2,6 @@
 body {
     height: 100%;
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -71,6 +69,9 @@ body {
     .bgimg-3 {
         background-attachment: scroll;
     }
+    .container {
+        min-width: 100%;
+    }
 }
 
 
@@ -137,7 +138,7 @@ body {
 
 .container {
     text-align: center;
-    padding: 50px 80px;
+    padding: 50px 0;
 }
 
 .section-title {
@@ -235,7 +236,8 @@ body {
 
 @media only screen and (max-device-width: 1200px) {
     .portrait {
-        margin-bottom: 80px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .wrapper {
         display: flex;
@@ -246,6 +248,15 @@ body {
         justify-content: center;
         flex-wrap: wrap;
         width: 100%;
+    }
+    p {
+        font-size: 23px;
+    }
+    .section-title {
+        font-size: 55px;
+    }
+    h2 {
+        font-size: 55px;
     }
 }
 
@@ -436,12 +447,12 @@ body {
 @media screen and (max-width: 980px) {
     /* Increases service width on mobile phones */
     .service {
-        width: calc(50% - 20px);
+        width: calc(80% - 20px);
         margin-left: auto;
         margin-right: auto;
     }
     .project {
-        width: calc(50% - 10px);
+        width: calc(80% - 10px);
         margin-left: auto;
         margin-right: auto;
     }
