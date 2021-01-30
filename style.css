@@ -447,12 +447,12 @@ body {
 @media screen and (max-width: 980px) {
     /* Increases service width on mobile phones */
     .service {
-        width: calc(80% - 20px);
+        width: calc(60% - 10px);
         margin-left: auto;
         margin-right: auto;
     }
     .project {
-        width: calc(80% - 10px);
+        width: calc(90% - 10px);
         margin-left: auto;
         margin-right: auto;
     }
