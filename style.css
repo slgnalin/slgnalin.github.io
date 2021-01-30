@@ -446,13 +446,25 @@ body {
 
 @media screen and (max-width: 980px) {
     /* Increases service width on mobile phones */
+    .wrapper h2 {
+        color: #fc414e;
+        font-size: 50px;
+    }
     .wrapper p {
-        text-align: justify;
+        /* text-align: justify; */
+        padding: 15px 0;
         font-size: 44px;
     }
     #hire-btn,
     #proj-btn {
         font-size: 41px;
+        padding: 38px 25px;
+    }
+    #hire-btn {
+        border: 4px solid #fc414e;
+    }
+    #proj-btn {
+        border: 4px solid #503bff;
     }
     .section-subtitle {
         font-size: 46px;
