@@ -25,7 +25,7 @@
     .btn-f span,
     .btn-g span,
     .btn-insta span {
-        font-size: 32px;
+        font-size: 40px;
         transform: translateX(0px);
         columns: #fff;
         opacity: 1;
@@ -33,7 +33,7 @@
     .btn-f i,
     .btn-g i,
     .btn-insta i {
-        font-size: 32px;
+        font-size: 40px;
     }
 }
 
