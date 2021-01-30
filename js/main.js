@@ -1,5 +1,4 @@
 // hide navbar on scroll down and reveal on scroll up
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;

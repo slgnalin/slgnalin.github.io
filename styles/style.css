@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     height: 100%;
     box-sizing: border-box;
@@ -46,17 +47,17 @@ body {
 }
 
 .bgimg-1 {
-    background-image: url("./src/nice-sky.jpg");
+    background-image: url("../src/img/nice-sky.jpg");
     min-height: 870px;
 }
 
 .bgimg-2 {
-    background-image: url("./src/today-not-tomorrow.jpg");
+    background-image: url("../src/img/today-not-tomorrow.jpg");
     min-height: 400px;
 }
 
 .bgimg-3 {
-    background-image: url("./src/im-possible.jpg");
+    background-image: url("../src/img/im-possible.jpg");
     min-height: 400px;
 }
 
@@ -156,7 +157,7 @@ body {
 }
 
 .section-subtitle {
-    font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -172,6 +173,10 @@ body {
     letter-spacing: 1.5px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper p {
+    font-family: 'Roboto', sans-serif;
 }
 
 .portrait {
@@ -302,6 +307,7 @@ body {
 
 .service h4,
 .service p {
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     margin-bottom: 6px;
     color: #8293ff;
@@ -446,9 +452,15 @@ body {
 
 @media screen and (max-width: 980px) {
     /* Increases service width on mobile phones */
+    .name {
+        font-size: 60px;
+    }
+    .job {
+        font-size: 85px;
+    }
     .wrapper h2 {
         color: #fc414e;
-        font-size: 50px;
+        font-size: 60px;
     }
     .wrapper p {
         /* text-align: justify; */
@@ -475,8 +487,8 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-    .service i {
-        line-height: 100px;
+    .service .icon {
+        font-size: 60px;
     }
     .service h4 {
         font-size: 54px;
