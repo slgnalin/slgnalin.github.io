@@ -18,14 +18,14 @@
     .btn-f,
     .btn-g,
     .btn-insta {
-        width: 60%;
+        width: calc(80% - 10px);
         margin: 10px 0;
         padding: 0px;
     }
     .btn-f span,
     .btn-g span,
     .btn-insta span {
-        font-size: 24px;
+        font-size: 27px;
         transform: translateX(0px);
         columns: #fff;
         opacity: 1;
@@ -33,7 +33,7 @@
     .btn-f i,
     .btn-g i,
     .btn-insta i {
-        font-size: 24px;
+        font-size: 27px;
     }
 }
 
