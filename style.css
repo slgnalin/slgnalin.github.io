@@ -459,7 +459,7 @@ body {
     }
     .service {
         width: calc(70% - 10px);
-        height: 300px;
+        height: 410px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -471,6 +471,7 @@ body {
         font-weight: bold;
     }
     .service p {
+        margin-top: 15px;
         font-size: 44px;
     }
     .project {
