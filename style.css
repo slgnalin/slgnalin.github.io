@@ -447,13 +447,16 @@ body {
 @media screen and (max-width: 980px) {
     /* Increases service width on mobile phones */
     .wrapper p {
+        font-weight: bold;
         font-size: 42px;
     }
     #hire-btn,
     #proj-btn {
+        font-weight: bold;
         font-size: 39px;
     }
     .section-subtitle {
+        font-weight: bold;
         font-size: 44px;
     }
     .service {
@@ -466,10 +469,12 @@ body {
         line-height: 100px;
     }
     .service h4 {
+        font-weight: bold;
         font-size: 52px;
         font-weight: bold;
     }
     .service p {
+        font-weight: bold;
         font-size: 42px;
     }
     .project {
