@@ -15,7 +15,7 @@
 .wrapper-footer>p>a {
     color: #777;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .wrapper-footer>p>a:hover {
@@ -29,4 +29,10 @@
 .fa-laptop {
     margin: 3px;
     color: #45a7f7;
+}
+
+@media screen and (max-width: 980px) {
+    .wrapper-footer>p>a {
+        font-size: 28px;
+    }
 }
