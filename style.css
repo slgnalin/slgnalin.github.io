@@ -446,10 +446,31 @@ body {
 
 @media screen and (max-width: 980px) {
     /* Increases service width on mobile phones */
+    .wrapper p {
+        font-size: 24px;
+    }
+    #hire-btn,
+    #proj-btn {
+        font-size: 20px;
+    }
+    .section-subtitle {
+        font-size: 26px;
+    }
     .service {
         width: calc(60% - 10px);
+        height: 300px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .service i {
+        line-height: 100px;
+    }
+    .service h4 {
+        font-size: 34px;
+        font-weight: bold;
+    }
+    .service p {
+        font-size: 24px;
     }
     .project {
         width: calc(90% - 10px);

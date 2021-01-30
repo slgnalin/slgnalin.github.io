@@ -9,6 +9,34 @@
 
 /* END CONTAINER */
 
+@media screen and (max-width: 980px) {
+    .container-sm {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .btn-f,
+    .btn-g,
+    .btn-insta {
+        width: 60%;
+        margin: 10px 0;
+        padding: 0px;
+    }
+    .btn-f span,
+    .btn-g span,
+    .btn-insta span {
+        font-size: 24px;
+        transform: translateX(0px);
+        columns: #fff;
+        opacity: 1;
+    }
+    .btn-f i,
+    .btn-g i,
+    .btn-insta i {
+        font-size: 24px;
+    }
+}
+
 
 /* START FACEBOOK */
 

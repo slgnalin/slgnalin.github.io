@@ -1,3 +1,10 @@
+@media screen and (max-width: 980px) {
+    .wrapper-footer p,
+    .wrapper-footer i {
+        font-size: 24px;
+    }
+}
+
 #footer {
     text-align: center;
     margin-top: 0px;
