@@ -7,7 +7,9 @@
 }
 
 .container-404 {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     width: 80%;
     height: 80%;
     position: absolute;
@@ -19,31 +21,28 @@
 }
 
 .circle-404 {
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+    margin-left: 100px;
     position: relative;
-    width: 25%;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.75);
+    width: 350px;
     height: 0;
-    padding-bottom: 25%;
-    top: 50%;
-    left: 10%;
-    transform: translate(-5%, -50%);
+    padding-bottom: 350px;
     border-radius: 50%;
     background-color: #344563;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    animation: floating 2s infinite ease-in-out;
+    /* animation: floating 2s infinite ease-in-out; */
 }
 
 .ghost {
-    transform: translate(85%, 55%);
+    top: 50%;
+    left: 50%;
+    margin: -90px 0 0 -70px;
     width: 140px;
     height: 160px;
     background-color: #f2f2f2;
     border-radius: 70px 70px 0 0;
-    position: relative;
+    position: absolute;
     cursor: pointer;
-    animation: floating-ghost 3s infinite ease-in-out;
+    /* animation: floating-ghost 3s infinite ease-in-out; */
 }
 
 @keyframes floating-ghost {
@@ -144,29 +143,28 @@
 }
 
 .error-wrapper {
-    padding-left: 10%;
-    padding-top: 10%;
-    transform: translate(65%, -50%);
+    margin-left: 80px;
+    text-align: left;
     width: calc(50% - 20px);
-    height: 80%;
+    height: 70%;
 }
 
 .text-404 {
     font-weight: bold;
     font-family: 'Roboto Slab', serif;
     letter-spacing: 24px;
-    color: rgb(37, 59, 98);
-    position: absolute;
+    color: #045fff;
     top: 5%;
     margin-left: 10px;
     font-size: 140px;
 }
 
 .line-404 {
+    left: 5%;
     margin: 10px;
     border-radius: 1px;
-    width: 95%;
-    height: 5%;
+    width: 50%;
+    height: 60px;
     background-color: #a6acba;
     position: absolute;
     top: 40%;
@@ -174,14 +172,14 @@
 }
 
 .line2 {
-    width: 95%;
+    width: 50%;
     top: 50%;
     animation: line2-anim 1.2s forwards;
 }
 
 .line3 {
     top: 60%;
-    width: 60%;
+    width: 40%;
     animation: line3-anim 1.4s forwards;
 }
 
@@ -210,10 +208,6 @@
 }
 
 @media screen and (max-width: 980px) {
-    .ghost {
-        transform: translate(90%, 55%);
-        animation: floating-ghost 3s infinite ease-in-out;
-    }
     @keyframes floating-ghost {
         50% {
             transform: translate(90%, 65%);
@@ -225,36 +219,39 @@
         }
     }
     .container-404 {
+        justify-content: center;
         width: 80%;
         height: 90%;
     }
     .circle-404 {
-        width: 400px;
-        height: 400px;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -10%);
+        margin-left: 0;
+        margin-top: 100px;
+        height: 300px;
+        width: 0;
+        padding-left: 300px;
+        background-color: #344563;
     }
     .error-wrapper {
-        justify-content: center;
+        margin-left: 0;
+        text-align: center;
         width: 90%;
         height: 60%;
-        margin-top: 100px;
-        transform: translate(5%, 0%);
+        margin-top: 60px;
     }
     .text-404 {
-        left: 30%;
+        color: rgb(37, 59, 98);
     }
     .line-404 {
+        margin-top: 100px;
         width: 85%;
-        top: 30%;
+        top: 700px;
     }
     .line2 {
         width: 85%;
-        top: 40%;
+        top: 800px;
     }
     .line3 {
-        top: 50%;
         width: 65%;
+        top: 900px;
     }
 }
