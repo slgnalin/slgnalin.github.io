@@ -143,6 +143,8 @@
 }
 
 .error-wrapper {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     margin-left: 80px;
@@ -204,6 +206,9 @@
 }
 
 @media screen and (max-width: 980px) {
+    .wrapper-404 {
+        max-height: 150%;
+    }
     .container-404 {
         justify-content: center;
         width: 80%;
@@ -227,5 +232,10 @@
     .text-404 {
         color: rgb(37, 59, 98);
     }
-    .line-404
+    .line2 {
+        margin-top: -100px;
+    }
+    .line3 {
+        margin-top: -150px;
+    }
 }
