@@ -246,7 +246,7 @@
     .container-404 {
         justify-content: center;
         width: 80%;
-        height: auto;
+        min-height: 90%;
         padding: 10px;
     }
     .circle-404 {
@@ -270,6 +270,15 @@
     .line-404 {
         margin-top: 10px;
     }
-    .line2 {}
-    .line3 {}
+    #home-btn {
+        margin-top: 20px;
+        font-size: 41px;
+        padding: 38px 25px;
+    }
+    #home-btn {
+        border: 4px solid #fc414e;
+    }
+    #home-btn {
+        border: 4px solid #503bff;
+    }
 }
