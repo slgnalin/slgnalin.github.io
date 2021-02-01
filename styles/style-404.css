@@ -29,7 +29,7 @@
     padding-bottom: 350px;
     border-radius: 50%;
     background-color: #344563;
-    /* animation: floating 2s infinite ease-in-out; */
+    animation: floating 2s infinite ease-in-out;
 }
 
 .ghost {
@@ -42,18 +42,18 @@
     border-radius: 70px 70px 0 0;
     position: absolute;
     cursor: pointer;
-    /* animation: floating-ghost 3s infinite ease-in-out; */
+    animation: floating-ghost 3s infinite ease-in-out;
 }
 
 @keyframes floating-ghost {
     50% {
-        transform: translate(85%, 65%);
+        transform: translateY(-30px);
     }
 }
 
 @keyframes floating {
     50% {
-        transform: translate(-5%, -53%);
+        transform: translateY(-30px);
     }
 }
 
@@ -160,11 +160,11 @@
 }
 
 .line-404 {
-    left: 5%;
+    left: 530px;
     margin: 10px;
     border-radius: 1px;
-    width: 50%;
-    height: 60px;
+    width: 60%;
+    height: 40px;
     background-color: #a6acba;
     position: absolute;
     top: 40%;
@@ -172,7 +172,7 @@
 }
 
 .line2 {
-    width: 50%;
+    width: 60%;
     top: 50%;
     animation: line2-anim 1.2s forwards;
 }
@@ -208,16 +208,6 @@
 }
 
 @media screen and (max-width: 980px) {
-    @keyframes floating-ghost {
-        50% {
-            transform: translate(90%, 65%);
-        }
-    }
-    @keyframes floating {
-        50% {
-            transform: translate(-50%, -15%);
-        }
-    }
     .container-404 {
         justify-content: center;
         width: 80%;
@@ -242,6 +232,7 @@
         color: rgb(37, 59, 98);
     }
     .line-404 {
+        left: 40px;
         margin-top: 100px;
         width: 85%;
         top: 700px;
