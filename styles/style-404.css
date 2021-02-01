@@ -143,6 +143,8 @@
 }
 
 .error-wrapper {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 80px;
     text-align: left;
     width: calc(50% - 20px);
@@ -150,36 +152,30 @@
 }
 
 .text-404 {
+    width: 100%;
     font-weight: bold;
     font-family: 'Roboto Slab', serif;
     letter-spacing: 24px;
     color: #045fff;
-    top: 5%;
     margin-left: 10px;
     font-size: 140px;
 }
 
 .line-404 {
-    left: 530px;
-    margin: 10px;
     border-radius: 1px;
-    width: 60%;
+    width: 100%;
     height: 40px;
     background-color: #a6acba;
-    position: absolute;
-    top: 40%;
     animation: line1-anim 1.0s forwards;
 }
 
 .line2 {
-    width: 60%;
-    top: 50%;
+    width: 100%;
     animation: line2-anim 1.2s forwards;
 }
 
 .line3 {
-    top: 60%;
-    width: 40%;
+    width: 90%;
     animation: line3-anim 1.4s forwards;
 }
 
@@ -231,18 +227,5 @@
     .text-404 {
         color: rgb(37, 59, 98);
     }
-    .line-404 {
-        left: 40px;
-        margin-top: 100px;
-        width: 85%;
-        top: 700px;
-    }
-    .line2 {
-        width: 85%;
-        top: 800px;
-    }
-    .line3 {
-        width: 65%;
-        top: 900px;
-    }
+    .line-404
 }
