@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+/* START WHOLE PAGE */
+
 .wrapper-404 {
     position: relative;
     width: 100%;
@@ -6,6 +9,12 @@
     background-color: #ff9920;
     overflow: auto;
 }
+
+
+/* END WHOLE PAGE */
+
+
+/* START ERROR RECTANGLE */
 
 .container-404 {
     display: flex;
@@ -21,6 +30,12 @@
     border-radius: 6px;
 }
 
+
+/* START ERROR RECTANGLE */
+
+
+/* START CIRCLE */
+
 .circle-404 {
     margin-left: 100px;
     position: relative;
@@ -32,6 +47,12 @@
     background-color: #344563;
     animation: floating 2s infinite ease-in-out;
 }
+
+
+/* END CIRCLE */
+
+
+/* START GHOST */
 
 .ghost {
     top: 50%;
@@ -143,6 +164,12 @@
     border-radius: 0 0 12px 20px;
 }
 
+
+/* END GHOST */
+
+
+/* START TEXT, LINES, BUTTON */
+
 .error-wrapper {
     margin: 0;
     padding: 0;
@@ -239,6 +266,12 @@
     }
 }
 
+
+/* END TEXT, LINES, BUTTON */
+
+
+/* START PHONE SETTINGS */
+
 @media screen and (max-width: 980px) {
     .wrapper-404 {
         overflow: hidden;
@@ -282,3 +315,6 @@
         border: 4px solid #503bff;
     }
 }
+
+
+/* END PHONE SETTINGS */

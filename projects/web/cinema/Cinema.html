@@ -1,0 +1,264 @@
+<html>
+
+<head>
+    <title>Cinema</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="js/overlay.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVIGATION BAR -->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars" style="color: #fff"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#slider">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#movies">MOVIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tickets">TICKETS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- SLIDER -->
+    <div id="slider">
+        <div id="headerSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+                <li data-target="#headerSlider" data-slide-to="1"></li>
+                <li data-target="#headerSlider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/inside.jpg" class="d-block img-fluid">
+                    <div class="carousel-caption">
+                        <h5 style="color:#fff">Thrilling ambient</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/inside2.jpg" class="d-block img-fluid">
+                    <div class="carousel-caption">
+                        <h5>Sensational comfort</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/inside3.jpg" class="d-block img-fluid">
+                    <div class="carousel-caption">
+                        <h5>Astonishing projection </h5>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+    <!-- MOVIES OVERLAY -->
+    <section id="movies-overlay" onclick="f1off()">
+        <div class="chenar">
+            <div class="row f1">
+                <div class="col-md-4 banner-overlay text-center">
+                    <div class="img-bnr">
+                        <img id="f1" src="img/movies/friday/1.jpg">
+                        <img id="f2" src="img/movies/friday/2.jpg">
+                        <img id="f3" src="img/movies/friday/3.jpg">
+                        <img id="sa1" src="img/movies/saturday/1.jpg"> <img id="sa2" src="img/movies/saturday/2.jpg">
+                        <img id="sa3" src="img/movies/saturday/3.jpg">
+                        <img id="su1" src="img/movies/sunday/1.jpg">
+                        <img id="su2" src="img/movies/sunday/2.jpg">
+                        <img id="su3" src="img/movies/sunday/3.jpg">
+                    </div>
+                </div>
+                <div class="col-md-6 banner-overlay" style="border-radius: 0px;">
+                    <h2>Description</h2>
+                    <p class="desc" id="output">NOT AVAILABLE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MOVIES -->
+    <section id="movies">
+        <div class="container">
+            <h1>THIS WEEK'S MOVIES</h1>
+            <div class="row">
+                <div class="col-md-4 banner text-center">
+                    <h2>FRIDAY</h2>
+                    <h3>5:30 PM</h3>
+                    <div class="img-box" onclick="f1on()">
+                        <img src="img/movies/friday/1.jpg" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-4 banner text-center">
+                    <h2>FRIDAY</h2>
+                    <h3>7:30 PM</h3>
+                    <div class="img-box" onclick="f2on()">
+                        <img src="img/movies/friday/2.jpg" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-4 banner text-center">
+                    <h2>FRIDAY</h2>
+                    <h3>9:30 PM</h3>
+                    <div class="img-box" onclick="f3on()">
+                        <img src="img/movies/friday/3.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 banner text-center">
+                    <h2>SATURDAY</h2>
+                    <h3>4:30 PM</h3>
+                    <div class="img-box" onclick="sa1on()">
+                        <img src="img/movies/saturday/1.jpg" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-4 banner text-center">
+                    <h2>SATURDAY</h2>
+                    <h3>6:15 PM</h3>
+                    <div class="img-box" onclick="sa2on()">
+                        <img src="img/movies/saturday/2.jpg" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-4 banner text-center">
+                    <h2>SATURDAY</h2>
+                    <h3>9:15 PM</h3>
+                    <div class="img-box" onclick="sa3on()">
+                        <img src="img/movies/saturday/3.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 banner text-center">
+                    <h2>SUNDAY</h2>
+                    <h3>4:30 PM</h3>
+                    <div class="img-box" onclick="su1on()">
+                        <img src="img/movies/sunday/1.jpg" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-4 banner text-center">
+                    <h2>SUNDAY</h2>
+                    <h3>7:00 PM</h3>
+                    <div class="img-box" onclick="su2on()">
+                        <img src="img/movies/sunday/2.jpg" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-4 banner text-center">
+                    <h2>SUNDAY</h2>
+                    <h3>9:15 PM</h3>
+                    <div class="img-box" onclick="su3on()">
+                        <img src="img/movies/sunday/3.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PRICING -->
+    <section id="tickets">
+        <div class="container">
+            <h1>TICKETS</h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="single-price">
+                        <div class="price">
+                            <h2>Kids (0-6)</h2>
+                            <p>$4</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-price">
+                        <div class="price">
+                            <h2>Students</h2>
+                            <p>$10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-price">
+                        <div class="price">
+                            <h2>Adults</h2>
+                            <p>$15</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="single-price">
+                        <div class="price">
+                            <h2>Blockbuster</h2>
+                            <p>$20</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT US -->
+    <section id="contact">
+        <div class="container">
+            <h1>Get in touch</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" class="name form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="phone" class="phone form-control" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="email form-control" placeholder="Enter your email address">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="message form-control" name="message" rows="4" placeholder="Enter your message"></textarea>
+                        </div>
+                        <div class="status">
+                        </div>
+                        <!-- <button type="submit" class="submit btn btn-primary">Send message</button> -->
+                    </form>
+                </div>
+                <div class="col-md-6 contact-info">
+                    <div class="follow"><b>Address: </b><i class="fa fa-road"></i> ABC Road, Sudbury, ON</div>
+                    <div class="follow"><b>Phone: </b><i class="fa fa-phone"></i> +1 555 623 187</div>
+                    <div class="follow"><b>Email: </b><i class="fa fa-paper-plane"></i> contact@cinema.com</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section id="footer">
+        <div class="container text-center">
+            <p style="color: #777; margin: 3px;">Created by <i class="fa fa-laptop"></i> Alin Salagean</p>
+        </div>
+    </section>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]')
+    </script>
+</body>
+
+</html>
