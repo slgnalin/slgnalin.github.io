@@ -1,32 +1,25 @@
 <link rel="stylesheet" href="./styles/style-nav.css">
-<nav class="navbar navbar-expand-lg navbar-light">
 
-    <!-- LOGO on navbar -->
-    <a class="navbar-brand" href="#">
-        <h1 class="logo">slgnalin()</h1>
-    </a>
-
-    <!-- Expand nav-bar on phones BUTTON -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fa fa-bars" style="color: #fff"></span>
-      </button>
-
-    <!-- navbar BUTTONS -->
-    <div class="collapse navbar-collapse header" id="navbarNav">
-        <ul class="nav-links">
-            <li class="nav-item">
-                <a class="nav-link" href="https://slgnalin.github.io/index.html">ACASĂ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://slgnalin.github.io/index.html#about">DESPRE MINE</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://slgnalin.github.io/index.html#services">SERVICII</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://slgnalin.github.io/index.html#projects">PROIECTE</a>
-            </li>
-            <a style="margin-top: 0px;" href="https://slgnalin.github.io/index.html#contact"><button class="btn contact-btn">Contact</button> </a>
-        </ul>
+<header>
+    <div class="innder-width">
+        <a href="#" class="logo">
+            <h1>slgnalin()</h1>
+        </a>
+        <i class="menu-toggle-btn fas fa-bars"></i>
+        <nav class="navigation-menu">
+            <a href="#"><i class="fas fa-home home"></i> Acasă</a>
+            <a href="#"><i class="fas fa-align-left about"></i> Despre mine</a>
+            <a href="#"><i class="fab fa-buffer works"></i> Servicii</a>
+            <a href="#"><i class="fas fa-users team"></i> Proiecte</a>
+            <a href="#">
+                <i class="fas fa-headset contact"></i> Contact
+            </a>
+        </nav>
     </div>
-</nav>
+</header>
+<script type="text/javascript">
+    $(".menu-toggle-btn").click(function() {
+        $(this).toggleClass("fa-times");
+        $(".navigation-menu").toggleClass("active");
+    });
+</script>
