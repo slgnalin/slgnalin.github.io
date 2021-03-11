@@ -50,6 +50,7 @@ body {
 }
 
 .app-info-wrapper {
+    visibility: hidden;
     /* background-color: burlywood; */
 }
 
@@ -127,6 +128,9 @@ body {
         display: flex;
     }
 }
+
+
+/* .chenar-mare:hover #download-btn, */
 
 .chenar-mare:hover .app-title,
 .chenar-mare:hover .app-subtitle,
