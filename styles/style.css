@@ -82,6 +82,18 @@ body {
     box-shadow: 0px 0px 19px 13px rgba(0, 0, 0, 0.75);
 }
 
+.section-shadow-above {
+    -webkit-box-shadow: 0px -35px 40px -33px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -35px 40px -33px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px -35px 40px -33px rgba(0, 0, 0, 0.75);
+}
+
+.section-shadow-below {
+    -webkit-box-shadow: 0px 35px 40px -33px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 35px 40px -33px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 35px 40px -33px rgba(0, 0, 0, 0.75);
+}
+
 .section-color-1 {
     background-color: #fff;
 }
@@ -154,6 +166,9 @@ body {
 .section-subtitle {
     font-family: "Roboto", sans-serif;
 }
+
+
+/* END SECTION CONTAINER */
 
 
 /* START ABOUT SECTION */
@@ -264,7 +279,37 @@ body {
 /* END ABOUT SECTION */
 
 
-/* END SECTION CONTAINER */
+/* START PARTNERS SECTION */
+
+.container-wide {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.partner-logos-wrapper {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    width: 80%;
+}
+
+.partner-logo {
+    filter: grayscale(100%);
+    max-width: 150px;
+    max-height: 150px;
+    margin: 40px;
+    text-align: center;
+    position: relative;
+    transition: 0.2s linear;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0%);
+}
+
+
+/* END PARTNERS SECTION */
 
 
 /* START SERVICES SECTION */
