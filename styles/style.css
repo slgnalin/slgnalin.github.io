@@ -295,9 +295,8 @@ body {
 }
 
 .partner-logo {
-    /* -webkit-filter: grayscale(100%); */
-    /* Safari 6.0 - 9.0 */
-    /* filter: grayscale(100%); */
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
     max-width: 150px;
     max-height: 150px;
     margin: 40px;
@@ -306,33 +305,33 @@ body {
     transition: 0.2s linear;
 }
 
-
-/* .partner-logo:hover {
+.partner-logo:hover {
+    filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
-    /* Safari 6.0 - 9.0 */
-
-filter: grayscale(0%);
-
 }
-*/
+
+
 /* END PARTNERS SECTION */
 
+
 /* START SERVICES SECTION */
+
 #services>.container>h1,
 #services>.container>p {
     color: #000;
 }
+
 .services {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .service {
     box-shadow: 0px 0px 15px #503bff;
     width: calc(33% - 20px);
     text-align: center;
     /* border: 2px solid #33bad8; */
-    
     border-radius: 24px;
     margin: 20px 0;
     padding: 40px 20px;
@@ -340,12 +339,14 @@ filter: grayscale(0%);
     cursor: pointer;
     transition: 0.3s linear;
 }
+
 .service .icon {
     color: #8293ff;
     font-size: 40px;
     margin-bottom: 20px;
     transition: 0.3s linear;
 }
+
 .service h4,
 .service p {
     font-family: "Roboto", sans-serif;
@@ -353,9 +354,11 @@ filter: grayscale(0%);
     margin-bottom: 6px;
     color: #8293ff;
 }
+
 .services:hover .service {
     /* filter: blur(1px); */
 }
+
 .services:hover .service:hover {
     box-shadow: none;
     background-image: linear-gradient(130deg, #503bff 0%, #8293ff 100%);
@@ -366,18 +369,23 @@ filter: grayscale(0%);
     -ms-transition: linear-gradient(130deg, #503bff 0%, #8293ff 100%) 0.5s linear;
     filter: blur(0px);
 }
+
 .service:hover .icon {
     color: #fff;
 }
+
 .service:hover h4,
 .service:hover p {
     color: #fff;
     transition: 0.3s all ease-in-out;
 }
 
+
 /* END SERVICES SECTION*/
 
+
 /* START AVAILABLE FOR FREELANCE */
+
 #hire-btn {
     color: #000;
     border: 2px solid #fc414e;
@@ -388,26 +396,33 @@ filter: grayscale(0%);
     font-weight: 600;
     letter-spacing: 1px;
 }
+
 #hire-btn:hover {
     color: #fff;
 }
+
 #hire-btn:hover::before {
     height: 180%;
 }
+
 #hire-btn::before {
     background: #fc414e;
     bottom: 0;
     border-radius: 100% 100% 0 0;
 }
 
+
 /* END AVAILABLE FOR FREELANCE */
 
+
 /* START PROJECTS SECTION */
+
 .projects {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .project {
     width: calc(33% - 10px);
     overflow: hidden;
@@ -416,11 +431,13 @@ filter: grayscale(0%);
     cursor: pointer;
     position: relative;
 }
+
 .project img {
     height: 100%;
     width: 100%;
     transition: 0.4s linear;
 }
+
 .project::before {
     content: "";
     position: absolute;
@@ -432,6 +449,7 @@ filter: grayscale(0%);
     opacity: 0;
     transform: scale(0);
 }
+
 .project .project-info {
     text-align: left;
     position: absolute;
@@ -442,105 +460,98 @@ filter: grayscale(0%);
     transition: 0.4s linear;
     opacity: 0;
 }
+
 .projects .fa-firefox {
     margin-right: 10px;
     font-size: 20px;
     color: #fff;
 }
+
 .projects .fa-android {
     margin-right: 10px;
     font-size: 20px;
     color: greenyellow;
 }
+
 .project {
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
 }
+
 .project:hover img {
     transform: scale(1.6) rotate(20deg);
 }
+
 .project:hover::before,
 .project:hover .project-info {
     opacity: 1;
     transform: scale(1);
 }
+
 .project-info>h3 {
     text-align: left;
     font-size: 20px;
     margin: 10px 0;
 }
 
+
 /* END PROJECTS SECTION */
+
 @media screen and (max-width: 980px) {
     /* Increases service width on mobile phones */
-    
     .name {
         font-size: 60px;
     }
-    
     .job {
         font-size: 85px;
     }
-    
     .wrapper h2 {
         color: #fc414e;
         font-size: 60px;
     }
-    
     .wrapper p {
         /* text-align: justify; */
         padding: 15px 0;
         font-size: 44px;
     }
-    
     #hire-btn,
     #proj-btn {
         font-size: 41px;
         padding: 38px 25px;
     }
-    
     #hire-btn {
         border: 4px solid #fc414e;
     }
-    
     #proj-btn {
         border: 4px solid #503bff;
     }
-    
     .section-subtitle {
         font-size: 46px;
     }
-    
     .service {
         width: calc(70% - 10px);
         height: 410px;
         margin-left: auto;
         margin-right: auto;
     }
-    
     .service .icon {
         font-size: 60px;
     }
-    
     .service h4 {
         font-size: 54px;
         font-weight: bold;
     }
-    
     .service p {
         margin-top: 15px;
         font-size: 44px;
     }
-    
     .project {
         width: calc(90% - 10px);
         margin-left: auto;
         margin-right: auto;
     }
-    
     .project-info>h3 {
         font-size: 50px;
     }
-    
     .project-cat {
         font-size: 38px;
     }
