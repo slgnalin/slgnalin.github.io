@@ -16,6 +16,10 @@
     }
 }
 
+.partners-wrapper-static {
+    display: none;
+}
+
 .slider {
     background: #eee;
     height: 100px;
@@ -56,4 +60,31 @@
 .slider .slide {
     height: 100px;
     width: 250px;
+}
+
+@media only screen and (max-device-width: 1200px) {
+    .slider {
+        display: none;
+    }
+    .partners-wrapper-static {
+        padding: 0 80px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* background-color: aqua; */
+    }
+    .logo-placeholder {
+        height: 200px;
+        width: calc(33% - 10px);
+    }
+    .partner-logo-static {
+        max-width: 200px;
+        max-height: 200px;
+        position: relative;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
 }
