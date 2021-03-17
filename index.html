@@ -59,16 +59,16 @@
             <!-- title, line, subtitle -->
             <h1 class="section-title">About me</h1>
             <div class="line"></div>
-            <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="section-subtitle">"Ships are safe in harbor - but that's not what ships are for."</p>
             <!-- portrait, title, content, button -->
             <div class="wrapper">
                 <img class="portrait" style="object-fit: cover;" src="./src/img/portrait-brighter.webp"></img>
                 <div style="padding: 0 30px; margin: 10px 0;">
                     <h2>Freelancer</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos qui nostrum quidem illo velit est.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est officiis laudantium natus sint voluptatibus ullam modi mollitia, similique magnam ex.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eum, atque rerum deserunt, non eaque dolores reprehenderit ea alias, veniam unde id repellat ex dignissimos</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eum, atque rerum deserunt, non eaque dolores reprehenderit ea alias, veniam unde id repellat ex dignissimos</p>
+                    <p>Passionate about programming, I am now majoring in Computer Science, constantly seeking new challenges.</p>
+                    <p>Constantly looking for new opportunities, I have been involved in multiple volunteering programs, both here and over the ocean.</p>
+                    <p>Some of my personal areas of focus are: teaching, web design and development, mobile applications development and photography.</p>
+                    <p>Want to hear more about my work?<br>Check my projects or ask me for a detailed CV.</p>
                     <a href="#projects"><button class="btn" id="proj-btn">PROJECTS</button></a>
                 </div>
             </div>
@@ -81,82 +81,17 @@
             <!-- title, line, subtitle -->
             <h1 class="section-title">Who I've worked with</h1>
             <div class="line"></div>
-            <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p class="section-subtitle">A lot of wonderful things are hidden behind hard work.</p>
             <!-- partners logos -->
-            <div class="partners-wrapper-static">
-                <div class="logo-placeholder">
-                    <img class="partner-logo-static" src="./src/partner-logos/ness-logo.png" />
-                </div>
-                <div class="logo-placeholder">
-                    <img class="partner-logo-static" src="./src/partner-logos/it-labs-logo.png" />
-
-                </div>
-                <div class="logo-placeholder">
-                    <img class="partner-logo-static" src="./src/partner-logos/fall-guys-guide-logo.png" />
-                </div>
-                <div class="logo-placeholder">
-                    <img class="partner-logo-static" src="./src/partner-logos/fall-guys-skins-logo.png" />
-                </div>
-
-                <div class="logo-placeholder">
-                    <img class="partner-logo-static" src="./src/partner-logos/coldwater-canada-logo.png" />
-                </div>
-                <div class="logo-placeholder">
-                    <img class="partner-logo-static" src="./src/partner-logos/new-horizons-logo.png" />
-
-                </div>
-                <div class="logo-placeholder">
-                    <img class="partner-logo-static" src="./src/partner-logos/impact-pro-deo-logo.png" />
-                </div>
+            <div class="partners" id="partners-placeholder">
             </div>
-            <div class="slider">
-                <div class="slide-track">
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/ness-logo.png" />
-                    </div>
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/it-labs-logo.png" />
-                    </div>
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/fall-guys-guide-logo.png" />
-                    </div>
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/fall-guys-skins-logo.png" />
-                    </div>
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/coldwater-canada-logo.png" />
-                    </div>
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/new-horizons-logo.png" />
-                    </div>
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/impact-pro-deo-logo.png" />
-                    </div>
-                    <!-- REPEAT -->
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/ness-logo.png" />
-                    </div>
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/it-labs-logo.png" />
-                    </div>
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/fall-guys-guide-logo.png" />
-                    </div>
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/fall-guys-skins-logo.png" />
-                    </div>
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/coldwater-canada-logo.png" />
-                    </div>
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/new-horizons-logo.png" />
-                    </div>
-                    <div class="slide">
-                        <img class="partner-logo" src="./src/partner-logos/impact-pro-deo-logo.png" />
-                    </div>
-                </div>
-
-            </div>
+            <script>
+                $(function() {
+                    $("#partners-placeholder").load("./html/partners.html");
+                });
+            </script>
+            <a href="#contact"><button class="btn" id="hire-btn">Request CV</button></a>
+        </div>
     </section>
     <!--**** END PARTNERS ****-->
 
@@ -219,7 +154,6 @@
             <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <!-- projects -->
             <div class="projects" id="projects-placeholder">
-
             </div>
             <script>
                 $(function() {
@@ -237,7 +171,7 @@
             <!-- title, line, subtitle -->
             <h1 class="section-title">Contact</h1>
             <div class="line"></div>
-            <p class="section-subtitle"></p>
+            <p class="section-subtitle">Still not convinced? Request a CV.</p>
             <!-- social media -->
             <div class="container-sm">
 

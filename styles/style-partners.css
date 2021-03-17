@@ -23,7 +23,7 @@
 .slider {
     background: #eee;
     height: 100px;
-    margin: auto;
+    margin: 50px auto;
     overflow: hidden;
     position: relative;
     width: 960px;
@@ -36,7 +36,7 @@
     height: 100px;
     position: absolute;
     width: 200px;
-    z-index: 2;
+    z-index: -1;
 }
 
 .slider::after {
@@ -67,6 +67,7 @@
         display: none;
     }
     .partners-wrapper-static {
+        margin: 60px 0;
         padding: 0 80px;
         width: 100%;
         display: flex;

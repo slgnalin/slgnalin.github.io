@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
 body {
     height: 100%;
     box-sizing: border-box;
@@ -164,7 +165,7 @@ body {
 }
 
 .section-subtitle {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Noto Sans HK', sans-serif;
 }
 
 
@@ -180,13 +181,14 @@ body {
 }
 
 .wrapper>div>h2 {
+    /* color: #503bff; */
     letter-spacing: 1.5px;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
 }
 
 .wrapper p {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Noto Sans HK', sans-serif;
 }
 
 .portrait {
@@ -200,7 +202,7 @@ body {
     background: none;
     padding: 10px 20px;
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
+    font-family: sans-serif;
     cursor: pointer;
     transition: 0.8s;
     position: relative;
@@ -446,10 +448,10 @@ body {
     opacity: 0;
 }
 
-.projects .fa-firefox {
+.projects .fa-laptop-code {
     margin-right: 10px;
     font-size: 20px;
-    color: #fff;
+    color: #eee;
 }
 
 .projects .fa-android {
